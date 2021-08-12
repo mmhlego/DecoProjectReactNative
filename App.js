@@ -1,12 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import CameraTest from "./Pages/CameraTest.js";
+import Login from "./Pages/Login.js";
+import SensorsTest from "./Pages/SensorsTest.js";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <CameraTest />
+      <SensorsTest />
+      {/* <Login /> */}
     </View>
   );
 }
@@ -14,8 +18,10 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#aaa",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "100vw",
+    minHeight: "100vh",
   },
 });
